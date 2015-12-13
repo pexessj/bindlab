@@ -27,6 +27,9 @@ recursion yes;
 zone "testeslinux.com.br" {
 	type master;
 	file "db.testeslinux.interna";
+	allow-transfer { 172.16.0.9; };
+	notify yes;
+	also-notify { 172.16.0.9; };
 };
 
 zone "0.16.172.in-addr.arpa" {
