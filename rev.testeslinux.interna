@@ -1,0 +1,14 @@
+$TTL 86000 ; default for all records
+@	IN	SOA	ns1.testeslinux.com.br.	root.testeslinux.com.br.	(
+		2015121301	;	serial
+		8h		;	refresh
+		1h		;	retry
+		3d		;	expire
+		3h	)	;	negative cache ttl
+;
+@	IN	NS	ns1.testeslinux.com.br.
+ns1	IN	A	172.16.0.3
+1	IN	PTR	firewall.testeslinux.com.br.
+2	IN	PTR	saltmaster.testeslinux.com.br.
+3	IN	PTR	dmz.testeslinux.com.br.
+9	IN	PTR	slave.testeslinux.com.br.

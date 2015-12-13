@@ -1,0 +1,24 @@
+$TTL 86000 ; default for all records
+@	IN	SOA	ns1.testeslinux.com.br.	root.testeslinux.com.br.	(
+		2015121302	;	serial
+		8h		;	refresh
+		1h		;	retry
+		3d		;	expire
+		3h	)	;	negative cache ttl
+;
+@	IN	NS	ns1.testeslinux.com.br.
+@	IN	MX	10	mail.testeslinux.com.br.
+@	IN	A	172.16.0.3
+ns1	IN	A	172.16.0.3
+www	IN	A	172.16.0.3
+ftp	IN	CNAME	www
+mail	IN	A	172.16.0.3
+smtp	IN	CNAME	mail
+webmail	IN	CNAME	mail
+pop	IN	CNAME	mail
+imap	IN	CNAME	mail
+ldap	IN	A	172.16.0.3
+firewall	IN	A	172.16.0.1
+saltmaster	IN	A	172.16.0.2
+dmz	IN	A	172.16.0.3
+slave	IN	A	172.16.0.9
